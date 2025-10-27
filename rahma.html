@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background: #000;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .stars-bg {
+        position: fixed;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        height: 1px;
+        width: 1px;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: -42vw -4vh 0px 0px #fff, 25vw -41vh 0px 0px #fff, -20vw 49vh 0px 1px #fff, 5vw 40vh 1px 1px #fff, 29vw 19vh 1px 0px #fff, -44vw -13vh 0px 0px #fff, 46vw 41vh 0px 1px #fff, -3vw -45vh 0px 1px #fff, 47vw 35vh 1px 0px #fff, 12vw -8vh 1px 0px #fff, -34vw 48vh 1px 1px #fff, 32vw 26vh 1px 1px #fff, 32vw -41vh 1px 1px #fff, 0vw 37vh 1px 1px #fff, 34vw -26vh 1px 0px #fff, -14vw -49vh 1px 0px #fff, -12vw 45vh 0px 1px #fff, -44vw -33vh 0px 1px #fff, -13vw 41vh 0px 0px #fff, -36vw -11vh 0px 1px #fff, -23vw -24vh 1px 0px #fff, -38vw -27vh 0px 1px #fff, 16vw -19vh 0px 0px #fff, 28vw 33vh 1px 0px #fff, -49vw -4vh 0px 0px #fff, 16vw 32vh 0px 1px #fff, 36vw -18vh 1px 0px #fff, -25vw -30vh 1px 0px #fff, -23vw 24vh 0px 1px #fff, -2vw -35vh 1px 1px #fff, -25vw 9vh 0px 0px #fff, -15vw -34vh 0px 0px #fff, -8vw -19vh 1px 0px #fff, -20vw -20vh 1px 1px #fff, 42vw 50vh 0px 1px #fff, -32vw 10vh 1px 0px #fff, -23vw -17vh 0px 0px #fff, 44vw 15vh 1px 0px #fff, -40vw 33vh 1px 1px #fff, -43vw 8vh 0px 0px #fff, -48vw -15vh 1px 1px #fff, -24vw 17vh 0px 0px #fff, -31vw 50vh 1px 0px #fff, 36vw -38vh 0px 1px #fff, -7vw 48vh 0px 0px #fff, 15vw -32vh 0px 0px #fff, 29vw -41vh 0px 0px #fff, 2vw 37vh 1px 0px #fff, 7vw -40vh 1px 1px #fff, 15vw 18vh 0px 0px #fff, 25vw -13vh 1px 1px #fff, -46vw -12vh 1px 1px #fff, -18vw 22vh 0px 0px #fff, 23vw -9vh 1px 0px #fff, 50vw 12vh 0px 1px #fff, 45vw 2vh 0px 0px #fff, 14vw -48vh 1px 0px #fff, 23vw 43vh 0px 1px #fff, -40vw 16vh 1px 1px #fff, 20vw -31vh 0px 1px #fff, -17vw 44vh 1px 1px #fff, 18vw -45vh 0px 0px #fff, 33vw -6vh 0px 0px #fff, 0vw 7vh 0px 1px #fff, -10vw -18vh 0px 1px #fff, -19vw 5vh 1px 0px #fff, 1vw 42vh 0px 0px #fff, 22vw 48vh 0px 1px #fff, 39vw -8vh 1px 1px #fff, -6vw -42vh 1px 0px #fff, -47vw 34vh 0px 0px #fff, -46vw 19vh 0px 1px #fff, -12vw -32vh 0px 0px #fff, -45vw -38vh 0px 1px #fff, -28vw 18vh 1px 0px #fff, -38vw -46vh 1px 1px #fff, 49vw -6vh 1px 1px #fff, -28vw 18vh 1px 1px #fff, 10vw -24vh 0px 1px #fff, -5vw -11vh 1px 1px #fff, 33vw -8vh 1px 0px #fff, -16vw 17vh 0px 0px #fff, 18vw 27vh 0px 1px #fff, -8vw -10vh 1px 1px #fff;
+
+        /* stars were too big with the layers above but left the code in case no one cares  -- as in, if noone's just that  one other loner who actually cares    */
+
+        box-shadow: 24vw 9vh 1px 0px #fff, 12vw -24vh 0px 1px #fff, -45vw -22vh 0px 0px #fff, -37vw -40vh 0px 1px #fff, 29vw 19vh 0px 1px #fff, 4vw -8vh 0px 1px #fff, -5vw 21vh 1px 1px #fff, -27vw 26vh 1px 1px #fff, -47vw -3vh 1px 1px #fff, -28vw -30vh 0px 1px #fff, -43vw -27vh 0px 1px #fff, 4vw 22vh 1px 1px #fff, 36vw 23vh 0px 0px #fff, -21vw 24vh 1px 1px #fff, -16vw 2vh 1px 0px #fff, -16vw -6vh 0px 0px #fff, 5vw 26vh 0px 0px #fff, -34vw 41vh 0px 0px #fff, 1vw 42vh 1px 1px #fff, 11vw -13vh 1px 1px #fff, 48vw -8vh 1px 0px #fff, 22vw -15vh 0px 0px #fff, 45vw 49vh 0px 0px #fff, 43vw -27vh 1px 1px #fff, 20vw -2vh 0px 0px #fff, 8vw 22vh 0px 1px #fff, 39vw 48vh 1px 1px #fff, -21vw -11vh 0px 1px #fff, -40vw 45vh 0px 1px #fff, 11vw -30vh 1px 0px #fff, 26vw 30vh 1px 0px #fff, 45vw -29vh 0px 1px #fff, -2vw 18vh 0px 0px #fff, -29vw -45vh 1px 0px #fff, -7vw -27vh 1px 1px #fff, 42vw 24vh 0px 0px #fff, 45vw -48vh 1px 0px #fff, -36vw -18vh 0px 0px #fff, -44vw 13vh 0px 1px #fff, 36vw 16vh 0px 1px #fff, 40vw 24vh 0px 0px #fff, 18vw 11vh 0px 0px #fff, -15vw -23vh 1px 0px #fff, -24vw 48vh 0px 1px #fff, 27vw -45vh 1px 0px #fff, -2vw -24vh 0px 1px #fff, -15vw -28vh 0px 0px #fff, -43vw 13vh 1px 0px #fff, 7vw 27vh 1px 0px #fff, 47vw 5vh 0px 0px #fff, -45vw 15vh 1px 1px #fff, -5vw -28vh 0px 1px #fff, 38vw 25vh 1px 1px #fff, -39vw -1vh 1px 0px #fff, 5vw 0vh 1px 0px #fff, 49vw 13vh 0px 0px #fff, 48vw 10vh 0px 1px #fff, 19vw -28vh 0px 0px #fff, 4vw 7vh 0px 0px #fff, 21vw 21vh 1px 1px #fff, -15vw -15vh 0px 1px #fff, -6vw -42vh 1px 0px #fff, -15vw 48vh 1px 1px #fff, -23vw 25vh 1px 1px #fff, -48vw 25vh 0px 1px #fff, -31vw -19vh 0px 1px #fff, 4vw 37vh 1px 1px #fff, -43vw 28vh 0px 0px #fff, 3vw -25vh 0px 1px #fff, -39vw 14vh 0px 1px #fff, -40vw 31vh 0px 1px #fff, 35vw -36vh 1px 1px #fff, 16vw 49vh 0px 0px #fff, 6vw 39vh 0px 0px #fff, 3vw -35vh 0px 1px #fff, -44vw -2vh 1px 0px #fff, -6vw 21vh 1px 0px #fff, 48vw 9vh 1px 1px #fff, -43vw 30vh 1px 1px #fff, 29vw -12vh 1px 1px #fff, -48vw 13vh 1px 0px #fff, -42vw 32vh 1px 1px #fff, 34vw 15vh 1px 1px #fff, 29vw -37vh 1px 1px #fff, 28vw 2vh 0px 0px #fff;
+        animation: zoom 16s alternate infinite;
+    }
+
+    @keyframes zoom {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.5);
+        }
+    }
+
+    @keyframes zoom {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.5);
+        }
+    }
+
+    /* glassy background for navbar */
+    .bg-glass {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar {
+        position: sticky !important;
+        top: 0;
+        z-index: 1000;
+        /* keep it above carousel and stars */
+    }
+
+
+    /* base nav-link style */
+    .nav-link {
+        color: white;
+        font-weight: 600;
+        padding: 8px 18px;
+        border-radius: 50px;
+        margin: 0 12px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+
+
+    /* when hovered */
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+
+    /* active (current page) look */
+    .nav-link.active {
+        background-color: #fff;
+        /* white pill */
+        color: #000 !important;
+        /* change font to black (or any color you want) */
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    }
+
+</style>
+
+<body>
+    <div class="stars-bg"></div>
+    <nav class="navbar mt-3 sticky-top navbar-expand-md bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#" style="color: white">7 Binary
+                <img src="" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-flex justify-content-center flex-grow-1">
+                    <ul class="navbar-nav bg-glass p-2 rounded-pill shadow-sm">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about"
+                                type="button" role="tab" aria-controls="about" aria-selected="false">About Us</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profil">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profil">Portofolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profil">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profil">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profil">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="btn btn-light rounded-pill fw-bold">Hire Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tab-content mt-5" id="myTabContent">
+        <div class="tab-pane fade shadow active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <section class="hero container text-center text-lg-start">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" style="margin-top: 4rem;">
+                        <button class="btn rounded-pill fw-bold mb-3 bg-glass" style="color: #fff;">Available for
+                            Opportunities</button>
+                        <h1 style="color:white"><b>Building Digital<br> Solutions on Strong<br> System Analys</b></h1>
+                        <p style="color:white">Building professional, user-friendly designs that support functionality
+                            and boost
+                            user engagement.</p>
+                        <div class="mt-4">
+                            <a href="#" class="btn rounded-pill fw-bold bg-glass" style="color: #fff;">Explore
+                                Portfolio</a>
+                            <a href="#" class="btn rounded-pill fw-bold bg-glass" style="color: #fff;">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 text-center">
+                        <img src="https://media.neliti.com/media/organisations/logo-170-universitas-riau.png"
+                            alt="Digital Hand" class="img-fluid" style="width: 75%;">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <div class="container" id="about" style="text-align: center; margin-top: 8rem; margin-bottom: 3rem;">
+                <h2 style="color: white;"><b>About
+                        <span style="color:rgba(40, 148, 250, 0.874)">7 Binary</span></b>
+                </h2>
+                <p style="color:white; font-size: 20px;"><i>The 7 Binary team is composed of Computer Science students
+                        focused
+                        on professional web system development. Our core competency lies in comprehensive System
+                        Analysis,
+                        ensuring every digital solution we deliver has a robust architecture and meets all client
+                        specifications.</i></p>
+            </div>
+
+            <div id="teamCarousel" class="carousel slide mt-5" data-bs-ride="carousel"
+                style="margin-top: 3rem; margin-bottom: 2rem;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card text-center bg-glass" style="color: white">
+                                        <div class="rounded p-3" w-80>
+                                            <img src="https://media.istockphoto.com/id/1324558913/id/foto/pemuda-percaya-diri-dengan-kemeja-hijau-kasual-menjauh-berdiri-dengan-lengan-menyilang.jpg?s=612x612&w=0&k=20&c=z3bD6KTSPnttmVPOXq-vazVep2Sxdh8aTgQXlETKr4k="
+                                                alt="" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-uppercase">Project Manager</p>
+                                            <h5 class="fw-bold">devi elta</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card text-center bg-glass" style="color: white">
+                                        <div class="rounded p-3" w-80>
+                                            <img src="https://media.istockphoto.com/id/1324558913/id/foto/pemuda-percaya-diri-dengan-kemeja-hijau-kasual-menjauh-berdiri-dengan-lengan-menyilang.jpg?s=612x612&w=0&k=20&c=z3bD6KTSPnttmVPOXq-vazVep2Sxdh8aTgQXlETKr4k="
+                                                alt="" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-uppercase">Project Manager</p>
+                                            <h5 class="fw-bold">devi elta</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card text-center bg-glass" style="color: white">
+                                        <div class="rounded p-3" w-80>
+                                            <img src="https://media.istockphoto.com/id/1324558913/id/foto/pemuda-percaya-diri-dengan-kemeja-hijau-kasual-menjauh-berdiri-dengan-lengan-menyilang.jpg?s=612x612&w=0&k=20&c=z3bD6KTSPnttmVPOXq-vazVep2Sxdh8aTgQXlETKr4k="
+                                                alt="" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-uppercase">Project Manager</p>
+                                            <h5 class="fw-bold">devi elta</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card text-center bg-glass" style="color: white">
+                                        <div class="rounded p-3" w-80>
+                                            <img src="https://media.istockphoto.com/id/1324558913/id/foto/pemuda-percaya-diri-dengan-kemeja-hijau-kasual-menjauh-berdiri-dengan-lengan-menyilang.jpg?s=612x612&w=0&k=20&c=z3bD6KTSPnttmVPOXq-vazVep2Sxdh8aTgQXlETKr4k="
+                                                alt="" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-uppercase">Project Manager</p>
+                                            <h5 class="fw-bold">devi elta</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card text-center bg-glass" style="color: white">
+                                        <div class="rounded p-3" w-80>
+                                            <img src="https://media.istockphoto.com/id/1324558913/id/foto/pemuda-percaya-diri-dengan-kemeja-hijau-kasual-menjauh-berdiri-dengan-lengan-menyilang.jpg?s=612x612&w=0&k=20&c=z3bD6KTSPnttmVPOXq-vazVep2Sxdh8aTgQXlETKr4k="
+                                                alt="" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-uppercase">Project Manager</p>
+                                            <h5 class="fw-bold">devi elta</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card text-center bg-glass" style="color: white">
+                                        <div class="rounded p-3" w-80>
+                                            <img src="https://media.istockphoto.com/id/1324558913/id/foto/pemuda-percaya-diri-dengan-kemeja-hijau-kasual-menjauh-berdiri-dengan-lengan-menyilang.jpg?s=612x612&w=0&k=20&c=z3bD6KTSPnttmVPOXq-vazVep2Sxdh8aTgQXlETKr4k="
+                                                alt="" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="text-uppercase">Project Manager</p>
+                                            <h5 class="fw-bold">devi elta</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+
+        const STAR_COUNT = 400
+        let result = ""
+        for (let i = 0; i < STAR_COUNT; i++) {
+            result += ${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,
+        }
+        console.log(result.substring(0, result.length - 1))
+    </script>
+    <script>
+        // select all nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                // remove 'active' from all links
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                // add 'active' to the clicked one
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
